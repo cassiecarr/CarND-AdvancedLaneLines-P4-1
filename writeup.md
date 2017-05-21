@@ -65,7 +65,7 @@ I will use the image below to walk though rest of the steps for my pipeline:
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-The `combined_threshold()` function in [threshold.py](threshold.py) was used to output a thresholded image in [find_lane_lines.py](find_lane_lines.py) line 30. `combined_threshold()` utilized Sobel thesholding in the x and y direction for the grayscale image. In addition, utilized thesholding in the red color channel. Each of these were combined to develop the final thesholded image. Here's an example of my output for this step:
+The `combined_threshold()` function in [threshold.py](threshold.py) was used to output a threshold image in [find_lane_lines.py](find_lane_lines.py) line 30. `combined_threshold()` utilized Sobel thesholding in the x and y direction for the grayscale image. In addition, utilized thesholding in the red color channel. Each of these were combined to develop the final thesholded image. Here's an example of my output for this step:
 
 ![alt text][image3]
 
