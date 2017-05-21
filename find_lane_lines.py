@@ -194,8 +194,8 @@ for filename in os.listdir("test_images/"):
         mpimg.imsave((os.path.join("output_images/test_images_with_lane_line_overlay/", filename)),output)
 
 # Process video with process image function
-output = 'output.mp4'
-clip = VideoFileClip("project_video.mp4")
-output_clip = clip.fl_image(bound_process_image) 
+output = 'output_challenge.mp4'
+clip = VideoFileClip("challenge_video.mp4")
+output_clip = clip.fl_image(bound_process_image)
 output_clip.write_videofile(output, audio=False)
 

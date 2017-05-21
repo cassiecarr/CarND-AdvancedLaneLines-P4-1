@@ -123,4 +123,8 @@ Here's a [link to my video result](https://www.youtube.com/watch?v=tTAImRSo81s)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+For the project video, my current pipline worked well. The thresholding and lane line search techniques used correctly found the lane lines in the majority of the frames. 
+
+However, there were some issues with the best fit polynomials sometimes having too much curvature and departing away from the lane line towards the ends. In addition, when running the challenge video, my code did not find lane lines in some of the frames, causing it to throw an error. 
+
+I would like to go back to make my pipeline more robust to handle the shortfalls described above. I would like to add functionality to keep in memory the last frame's best fit line and use this when the 2nd order polynomial can't be found or is not a good fit.  
