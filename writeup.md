@@ -47,7 +47,7 @@ The chessboard images in the [camera_cal](camera_cal) folder were read and input
 
 The `get_calibration()` function defines the `objpoints` and `imgpoints` for the `cv2.calibrateCamera()` function. The `imgpoints` are found using `cv2.findChessboardCorners()`, which identifies the chessboard corners in each image. The `objpoints` are defined by creating a grid of the (x, y, z) coordinates for the corners of a square flat chessboard. 
 
-The camera calibration and distortion coefficients output from `get_calibration()` are then applied to the test images using the `cv2.undistort()` in [find_lane_lines.py](find_lane_lines.py) line 27. The result below is a chessboard image before and after it is undistorted: 
+The camera calibration and distortion coefficients output from `get_calibration()` are then applied to the test images using the `cv2.undistort()` in [find_lane_lines.py](find_lane_lines.py) line 27. The result below shows the original chessboard image and the same image after undistortion: 
 
 ![alt text][image1]
 
