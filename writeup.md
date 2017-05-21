@@ -71,9 +71,9 @@ The `combined_threshold()` function in [threshold.py](threshold.py) was used to 
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-The code for my perspective transform can be found in [find_lane_lines.py](find_lane_lines.py) line 55. `src` and `dst` points were defined and `cv2.getPerspectiveTransform(src, dest)` was used to determine the perspective transform coefficients. The output was then input into the function `cv2.warpPerspective()` in order to create a top-down view of the image.  
+The code for my perspective transform can be found in [find_lane_lines.py](find_lane_lines.py) line 55. `src` and `dest` points were defined and `cv2.getPerspectiveTransform(src, dest)` was used to determine the perspective transform coefficients. The output was then input into the function `cv2.warpPerspective()` in order to create a top-down view of the image.  
 
-I chose to hardcode the source and destination points and verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
+I chose to hardcode the source and destination points and verified that my perspective transform was working as expected by drawing the `src` and `dest` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
 Here is an example of a warped image:
 
@@ -99,7 +99,7 @@ Here is an example of the lane line pixels with the overlay of the 2nd order pol
 
 Starting in line 133 of [find_lane_lines.py](find_lane_lines.py), the radius of curvature of the lane and position of the vehicle were determined. Using example images, conversion factors were defined to convert pixels to meters in real world space (assumptions were 3m between dashed lane lines and 3.7m between left and right lane lines). 
 
-Using this conversion, new 2nd order best fit polynomials were defined for the lane lines. These new 2nd order polynomials were then used to determin the radius of curvature of the lane by utilizing the radius of curature formula defined [here](http://www.intmath.com/applications-differentiation/8-radius-curvature.php).
+Using this conversion, new 2nd order best fit polynomials were defined for the lane lines. These new 2nd order polynomials were then used to determine the radius of curvature of the lane by utilizing the radius of curature formula defined [here](http://www.intmath.com/applications-differentiation/8-radius-curvature.php).
 
 The distance from the center of the lane was calculated by finding the center of the lane at the bottom of the image and subtracting it from the center of the image (or car center, assuming the car center is the center of the image). 
 
