@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 [image5]: ./output_images/test_images_overlay_step3_windows/test3.jpg "Window Overlay Example"
 [image6]: ./output_images/test_images_overlay_step4_polyfit/test3.jpg "Polyfit Line Example"
 [image7]: ./output_images/test_images_with_lane_line_overlay/test3.jpg "Result Output"
-[image8]: ./test_images/test3.jpt "Undistorted Lane Line Image"
+[image8]: ./test_images/test3.jpg "Undistorted Lane Line Image"
 [video1]: https://www.youtube.com/watch?v=tTAImRSo81s "Video"
 
 ---
