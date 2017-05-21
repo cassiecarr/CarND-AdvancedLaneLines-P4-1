@@ -31,10 +31,10 @@ The goals / steps of this project are the following:
 ### Submission Files
 
 My project includes the following files:
-* [find_lane_lines.py](find_lane_lines.py) containing the main pipeline for processing the lane line video and overlays the found lane lines, curvature, and distance from lane center
-* [calibrate_camera.py](calibrate_camera.py) containing the preprocessing calibrating the camera
+* [find_lane_lines.py](find_lane_lines.py) contains the main pipeline for processing the lane line video and overlays the found lane lines, curvature, and distance from lane center
+* [calibrate_camera.py](calibrate_camera.py) contains the preprocessing calibrating the camera
 * [threshold.py](threshold.py) contains the preprocessing for applying thresholding to the images or video frames
-* [find_lane_lines_utils.py](find_lane_lines_utils.py) containing the functions for finding windows surrounding lane lines
+* [find_lane_lines_utils.py](find_lane_lines_utils.py) contains the functions for finding windows surrounding lane lines
 * writeup.md (this file) explains the results
 
 ### Camera Calibration
